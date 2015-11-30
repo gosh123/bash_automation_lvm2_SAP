@@ -1,0 +1,53 @@
+PVCREATE:
+--------
+
+pvcreate /dev/sap/log/dvs_arch1 /dev/sap/log/dvs_log1 /dev/sap/data/dvs_data11 /dev/sap/data/dvs_data21
+pvcreate /dev/sap/log/tje_arch1 /dev/sap/log/tje_log1 /dev/sap/data/tje_data11 
+pvcreate /dev/sap/log/tji_arch1 /dev/sap/log/tji_log1 /dev/sap/data/tji_data11 
+pvcreate /dev/sap/log/tpe_arch1 /dev/sap/log/tpe_log1 /dev/sap/data/tpe_data11
+pvcreate /dev/sap/log/tpi_arch1 /dev/sap/log/tpi_log1 /dev/sap/data/tpi_data11
+pvcreate /dev/sap/log/tsc_arch1 /dev/sap/log/tsc_log1 /dev/sap/data/tsc_data11 /dev/sap/data/tsc_data21 /dev/sap/data/tsc_data31 /dev/sap/data/tsc_data41
+pvcreate /dev/sap/log/tsr_arch1 /dev/sap/log/tsr_log1 /dev/sap/data/tsr_data11 /dev/sap/data/tsr_data21 /dev/sap/data/tsr_data31 /dev/sap/data/tsr_data41
+pvcreate /dev/sap/log/tsw_arch1 /dev/sap/log/tsw_log1 /dev/sap/data/tsw_data11 /dev/sap/data/tsw_data21 /dev/sap/data/tsw_data31 /dev/sap/data/tsw_data41
+pvcreate /dev/sap/log/tsx_arch1 /dev/sap/log/tsx_log1 /dev/sap/data/tsx_data11 /dev/sap/data/tsx_data21 /dev/sap/data/tsx_data31 /dev/sap/data/tsx_data41
+pvcreate /dev/sap/data/dvs_sap1
+pvcreate /dev/sap/data/tje_sap1
+pvcreate /dev/sap/data/tji_sap1
+pvcreate /dev/sap/data/tpe_sap1
+pvcreate /dev/sap/data/tpi_sap1
+pvcreate /dev/sap/data/tsc_sap1
+pvcreate /dev/sap/data/tsr_sap1
+pvcreate /dev/sap/data/tsw_sap1
+pvcreate /dev/sap/data/tsx_sap1
+
+
+VGs PARA DATAFILES, LOGS Y ARCHIVE LOGS :
+----------------------------------------
+
+vgcreate -s 128 vgsapdbDVS /dev/sap/log/dvs_arch1 /dev/sap/log/dvs_log1 /dev/sap/data/dvs_data11 /dev/sap/data/dvs_data21 
+vgcreate -s 128 vgsapdbTJE /dev/sap/log/tje_arch1 /dev/sap/log/tje_log1 /dev/sap/data/tje_data11 
+vgcreate -s 128 vgsapdbTJI /dev/sap/log/tji_arch1 /dev/sap/log/tji_log1 /dev/sap/data/tji_data11 
+vgcreate -s 128 vgsapdbTPE /dev/sap/log/tpe_arch1 /dev/sap/log/tpe_log1 /dev/sap/data/tpe_data11
+vgcreate -s 128 vgsapdbTPI /dev/sap/log/tpi_arch1 /dev/sap/log/tpi_log1 /dev/sap/data/tpi_data11 
+vgcreate -s 128 vgsapdbTSC /dev/sap/log/tsc_arch1 /dev/sap/log/tsc_log1 /dev/sap/data/tsc_data11 /dev/sap/data/tsc_data21 /dev/sap/data/tsc_data31 /dev/sap/data/tsc_data41
+
+vgcreate -s 128 vgsapdbTSR /dev/sap/log/tsr_arch1 /dev/sap/log/tsr_log1 /dev/sap/data/tsr_data11 /dev/sap/data/tsr_data21 /dev/sap/data/tsr_data31 /dev/sap/data/tsr_data41
+
+vgcreate -s 128 vgsapdbTSW /dev/sap/log/tsw_arch1 /dev/sap/log/tsw_log1 /dev/sap/data/tsw_data11 /dev/sap/data/tsw_data21 /dev/sap/data/tsw_data31 /dev/sap/data/tsw_data41
+
+vgcreate -s 128 vgsapdbTSX /dev/sap/log/tsx_arch1 /dev/sap/log/tsx_log1 /dev/sap/data/tsx_data11 /dev/sap/data/tsx_data21 /dev/sap/data/tsx_data31 /dev/sap/data/tsx_data41
+
+
+VGs PARA INSTANCIA SAP
+----------------------
+
+vgcreate -s 128 vgsapDVS /dev/sap/data/dvs_sap1
+vgcreate -s 128 vgsapTJE /dev/sap/data/tje_sap1
+vgcreate -s 128 vgsapTJI /dev/sap/data/tji_sap1
+vgcreate -s 128 vgsapTPE /dev/sap/data/tpe_sap1
+vgcreate -s 128 vgsapTPI /dev/sap/data/tpi_sap1
+vgcreate -s 128 vgsapTSC /dev/sap/data/tsc_sap1
+vgcreate -s 128 vgsapTSR /dev/sap/data/tsr_sap1
+vgcreate -s 128 vgsapTSW /dev/sap/data/tsw_sap1
+vgcreate -s 128 vgsapTSX /dev/sap/data/tsx_sap1
+

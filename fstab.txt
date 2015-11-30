@@ -1,0 +1,17 @@
+
+/dev/vgsys/lv_sapTSR 		/usr/sap/TSR 		ext3	acl,user_xattr        1 2
+/dev/vgsapTSR/lv_mntTSR 	/sapmnt/TSR 		ext3	acl,user_xattr        1 2
+/dev/vgsapTSR/lv_sapTSRC 	/usr/sap/TSR/DVEBMGS00 	ext3	acl,user_xattr        1 2
+/dev/vgsapTSR/lv_sapTSRASCS 	/usr/sap/TSR/ASCS08 	ext3	acl,user_xattr        1 2
+/dev/vgsapTSR/lv_sapTSRSCS 	/usr/sap/TSR/SCS09 	ext3	acl,user_xattr        1 2
+/dev/vgsapTSR/lv_sapdbTSR 	/sapdb/TSR 		ext3	acl,user_xattr        1 2
+/dev/vgsapTSR/lv_sapinstTSR 	/sapinstTSR 		ext3	acl,user_xattr        1 2
+/dev/vgsapTSR/lv_tempswTSR 	/tempswTSR 		ext3	acl,user_xattr        1 2
+/dev/vgsapdbTSR/lv_saplogTSR 	/sapdb/TSR/log 		ext3	acl,user_xattr        1 2
+/dev/vgsapdbTSR/lv_saparchTSR 	/sapdb/TSR/saparch 	ext3	acl,user_xattr        1 2
+/dev/vgsapdbTSR/lv_sapdataTSR1 	/sapdb/TSR/sapdata1 	ext3	acl,user_xattr        1 2
+/dev/vgsapdbTSR/lv_sapdataTSR2 	/sapdb/TSR/sapdata2 	ext3	acl,user_xattr        1 2
+/dev/vgsapdbTSR/lv_sapdataTSR3 	/sapdb/TSR/sapdata3 	ext3	acl,user_xattr        1 2
+/dev/vgsapdbTSR/lv_sapdataTSR4 	/sapdb/TSR/sapdata4 	ext3	acl,user_xattr        1 2
+
+
