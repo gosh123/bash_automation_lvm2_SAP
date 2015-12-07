@@ -10,7 +10,8 @@ Consider also the following links that can help you to replicate a LVM2 layout t
 - How to quickly restore lvm2 volumes from saved layout http://www.mindtwist.de/main/linux/3-linux-tipps/47-how-to-quickly-restore-lvm2-volumes-from-saved-layout.html 
 - Logical Volume Backup https://access.redhat.com/knowledge/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Logical_Volume_Manager_Administration/backup.html 
 - Backing Up Volume Group Metadata https://access.redhat.com/knowledge/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Logical_Volume_Manager_Administration/VG_backup.html 
-- Recovering Physical Volume Metadata https://access.redhat.com/knowledge/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Logical_Volume_Manager_Administration/mdatarecover.html - Logical Volume Manager Administration. LVM Administrator Guide. https://access.redhat.com/knowledge/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Logical_Volume_Manager_Administration/ 
+- Recovering Physical Volume Metadata https://access.redhat.com/knowledge/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Logical_Volume_Manager_Administration/mdatarecover.html
+- Logical Volume Manager Administration. LVM Administrator Guide. https://access.redhat.com/knowledge/docs/en-US/Red_Hat_Enterprise_Linux/6/html/Logical_Volume_Manager_Administration/ 
 - pvresize http://www.linux-tutorial.info/modules.php?name=ManPage&sec=8&manpage=pvresize 
 
 
